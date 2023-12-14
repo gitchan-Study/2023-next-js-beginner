@@ -9,15 +9,19 @@ export default function NavBar() {
         <nav>
             <Link href="/" legacyBehavior>
                 <a className={
-                    `${styles.link} ${
+                    [
+                        styles.link,
                         router.pathname === "/" ? styles.active : ""
-                    }`
+                    ].join(" ")
                 }>Home</a>
             </Link>
             <Link href="/about" legacyBehavior>
-                <a className={`${styles.link} ${
-                    router.pathname === "/about" ? styles.active : ""
-                }`}> About < /a>
+                <a className={
+                    [
+                        styles.link,
+                        router.pathname === "/about" ? styles.active : ""
+                    ].join(" ")
+                }> About < /a>
             </Link>
         </nav>
     );
