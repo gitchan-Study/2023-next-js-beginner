@@ -5,11 +5,7 @@ export default function App({Component, pageProps}) {
         <Component {...pageProps}/>
         <style jsx global>{`
           a {
-            color: white;
-          }
-
-          h1 {
-            background-color: tomato;
+            color: black;
           }
         `}</style>
     </Layout>
